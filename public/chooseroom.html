@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatroom_107062211</title>
+    <meta charset="UTF-8"><!--can use Chinese-->
+    <link href="css/chooseroom.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/chooseroom.js"></script>  
+</head>
+<body style= "background-image:url(img/background.jpg)">
+    <div class="all">
+        <div class="header">
+          <div id="nowAccount"></div>
+          <ul class="menu">
+            <li><a href="profile.html">Setting</a></li>
+            <li><a href="index.html" id="logoutBtn">Logout</a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="col">
+            <div class="person">
+              <p>Change Sticker</p>
+              <input type="image" src="img/mybad.png" name="img" style='height:100px;margin-left:7px' align:="center"/>
+              <input type="image" src="img/public.png" name="img" style='height:100px;margin-left:7px' align:="center"/>
+            </div>
+          </div>
+          <div class="col main">
+            <button type="button" id = "public" class="glow-on-hover" style="display:flex;margin:20px">Public Chatroom</button>
+            <!--<input type="button" id = "animal" class="room" value="animal" style="display:flex;margin:20px"/>-->
+            <button type="button" id = "animal" style="display:flex;margin:20px"href="https://twitter.com/kamildyrek">
+              <div class="left"></div>
+                Animal Chatroom
+              <div class="right"></div>
+            </button>
+            <button type="button" id = "forest" style="display:flex;margin:20px"href="https://twitter.com/kamildyrek">
+              <div class="left"></div>
+                Forest Chatroom
+              <div class="right"></div>
+            </button>
+            <button type="button" id = "sky" style="display:flex;margin:20px"href="https://twitter.com/kamildyrek">
+              <div class="left"></div>
+                Sky Chatroom
+              <div class="right"></div>
+            </button>
+          </div>
+        </div>
+        <div class="footer">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+<!--      <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+      <script src='js/animation.js'></script>-->
+</body>
+</html>

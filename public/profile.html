@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chatroom Profile</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="css/pro_bootstrap.min.css">
+	<link rel="stylesheet" href="css/pro_font-awesome.min.css">
+	<link rel="stylesheet" href="css/pro-blue.css">
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<img src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<hr>
+				<h1 id = "Myname" class="tm-title bold shadow"></h1>
+				<h1 class="white bold shadow">Struggle To Survive</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="about">
+				<h3 class="accent">My Profile</h3>
+				<h2>I want to sleep</h2>
+				<p>我原本以為我今晚可以睡覺，看來是不行了。</p>
+				<p>我原本以為聊天室還行，看來是我太天真了。</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="skills">
+				<h2 class="white">Change Data</h2>
+				<strong>My name</strong>
+				<input type="text" id="newname" class="form-control" placeholder="取個好名賺大錢" required autofocus><br>
+				<button id="btnewname" style="color:#22609e;">Save</button><br>
+				<p>中國人重視取名藝術，缺什麼補什麼。<br>如果你金木水火土都缺，那你可以叫金灶沐。</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<ul class="social-icons">
+					<li><a href="chooseroom.html">Return</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- javascript js -->	
+<script src="js/pro_jquery.js"></script>
+<script src="js/pro_bootstrap.min.js"></script>	
+<script src="js/pro_jquery.backstretch.min.js"></script>
+<script src="js/pro_custom.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

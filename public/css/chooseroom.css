@@ -1,0 +1,305 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: "Microsoft JhengHei"
+  }
+  .all{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header{
+    background-color: #EAF0ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 60px;
+    color: #3F5D45;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 1px 9px #aaa
+  }
+  .menu{
+    display: flex;
+    list-style: none;
+  }
+  .menu a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #3F5D45;
+  }
+  .footer{
+    background-color: #3F5D45;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .footer a{
+    color: #fff;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    overflow-y: overlay;
+  }
+
+  .container .side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(173, 186, 247);
+    padding: 80px 60px 80px 60px ;
+    border-radius: 5px;
+    margin: 0 20px;
+  }
+
+  .container .side.main{
+    display: flex;
+    width: 600px;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .container .side.main.chat{
+    display: flex; 
+    flex-direction: column;
+    background-color:#EAF0ED;
+    justify-content: center;
+    padding: 10px 10px 10px 10px ;
+  }
+
+  .container .side.main.post{
+    display: block; 
+    flex-direction: column;
+    background-color: aquamarine;
+    justify-content: center;
+    width: 500px;
+    max-height: 150px;
+    padding: 10px 10px 10px 30px ;
+  }
+
+  .container .content{
+    width: 600px;
+    max-width: 100%;
+  }
+
+  .container .col{
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #EAF0ED;
+    border: 10px solid #3F5D45;
+    box-sizing: border-box;
+    width: 25%;
+    border-radius: 15px;
+    color: #3F5D45;
+    font-size: 48px;
+    margin: 20px; 
+  }
+
+  .container .col .person{
+    flex-direction: column;
+    justify-content:flex-start;
+    font-size: 20px;
+  }
+
+  .container .col.main{
+    align-items: center;
+    flex: 1 1 90%;
+    width: 50%;
+    font-size: 90px;
+    flex-wrap: wrap;
+  }
+
+   .room {
+    border:3px green double;
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .glow-on-hover {
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align:center
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(86, 78%, 24%);
+  --bg-color: #8a63d6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  position:relative;
+  padding: 5px 5px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 15px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 10px; 
+  z-index: 0;  
+  overflow: hidden; 
+  height:100px;
+  width:100px;
+    
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
